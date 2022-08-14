@@ -29,7 +29,7 @@ dag = DAG(
 
 unzip_data = BashOperator(
     task_id = 'unzip_data',
-    bash_command = 'tar -tzf /home/project/airflow/dags/finalassignment/tolldata.tgz',
+    bash_command = 'tar -xzf /home/project/airflow/dags/finalassignment/tolldata.tgz',
     dag = dag 
 )
 
